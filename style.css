@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+body {
+    font-family: 'Oswald', sans-serif;
+    background-color: #000000;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2rem;
+    color: #191825;
+    font-size: 35px;
+    background: linear-gradient(135deg, #191825 0%, #3E2C41 100%);
+    border-radius: 0 0 15px 15px; /* Arredondar apenas a parte inferior */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    z-index: 1000; /* Garante que a navegação esteja acima de outros conteúdos */
+}
+
+body {
+    padding-top: 70px; /* Ajusta o padding superior para não sobrepor o conteúdo ao nav */
+}
+
+.nav-item {
+    transition: text-shadow 0.3s ease-in-out, font-size 0.3s ease-in-out, color 0.3s ease-in-out;
+    text-decoration: none;
+    color: #E0E0E0;
+    font-weight: 700;
+}
+
+.nav-item:hover {
+    text-shadow: 0 0 15px rgba(255, 255, 255, 0.7), 
+                 0 0 25px rgba(255, 255, 255, 0.5), 
+                 0 0 35px rgba(255, 255, 255, 0.3);
+    font-size: 40px;
+    color: #FFFFFF;
+    transform: scale(1.05); 
